@@ -38,25 +38,6 @@ public class EmailCounterService {
     }
 
     /**
-     * Return a list of emails. These are hard-coded and not backed by any DB
-     *
-     * @return
-     */
-    public List<String> getEmails(){
-        List<String> emailList = new LinkedList<>();
-        emailList.add("DFastjeWork@gmail.com");
-        emailList.add("DFastje@gmail.com");
-        emailList.add("D.Fastje@gmail.com");
-        emailList.add(".DFastje@gmail.com");
-        emailList.add("D..Fastje@gmail.com");
-        emailList.add("DFastje+@gmail.com");
-        emailList.add("DFastje++@gmail.com");
-        emailList.add("DFastje+abcd@gmail.com");
-
-        return emailList;
-    }
-
-    /**
      *  helper method used to simplify emails
      *      1) this will strip out '.' => test.email@gmail.com will convert into testemail@gmail.com
      *      2) this will strip out everything between the first '+' and a '@'
@@ -65,7 +46,6 @@ public class EmailCounterService {
      * @return
      */
     private String emailSimplifier(String email){
-
         //1) Remove '.'
         email = email.replace(".", "");
 

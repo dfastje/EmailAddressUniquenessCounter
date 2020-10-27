@@ -22,9 +22,4 @@ public class EmailCounterController {
         return numUniqueEmails;
     }
 
-    @GetMapping(value = "/emails")
-    public List<String> getEmails(){
-        List<String> emailList = emailCounterService.getEmails();
-        return emailList;
-    }
 }
