@@ -14,15 +14,17 @@ sudo apt install openjdk-11-jdk
 sudo apt install maven
 ```
 #### Building 
--   From the repository's home directory (directory with the pom.xml file), run the following shell command (will also work in the windows command prompt):
+-   From the repository's home directory (directory with the pom.xml file), run the following shell 
+command (will also work in the windows command prompt):
 ```shell script
 mvn clean package
 ```
 
 ## Running the Jar file
--   After running the build steps or downloading the Jar files located in the Repo's home directory, run the following run command:
+-   After downloading the Jar file located in the Repo's home directory or running the build steps, 
+run the following run command on a terminal (or command prompt) in the directory with the jar file:
 ```shell script
-java -jar target/email-counter-0.0.1-SNAPSHOT.jar
+java -jar email-counter-0.0.1-SNAPSHOT.jar
 ```
 
 -   Access the Swagger Api Documentation page at this URL in your [browser]:
@@ -39,7 +41,8 @@ http://localhost:8080/swagger-ui.html
 ]
 ```
 
-
+## Other Notes
+Please see service method docs 
 
 
 [Java]: https://docs.oracle.com/en/java/javase/11/install/installation-jdk-microsoft-windows-platforms.html#GUID-A7E27B90-A28D-4237-9383-A58B416071CA
