@@ -1,19 +1,18 @@
 # Email Counter
 Rest API for counting the number of unique emails in an input list
 
-## Building the Jar file
-
-#### Prerequisites 
-(Commands provided assume that you are running Ubuntu, but links are provided for Windows installs)
--   This Project Requires [Java]: 
+## Prerequisites 
+Commands provided assume that you are running Ubuntu Linux, but links are provided for Windows installs
+-   This Project Requires [Java] to Build and Run: 
 ```shell script
 sudo apt install openjdk-11-jdk
 ```
--   This Project Requires [Maven]:
+-   This Project Requires [Maven] to Build:
 ```shell script
 sudo apt install maven
 ```
-#### Building 
+
+## Building the Jar file
 -   From the repository's home directory (directory with the pom.xml file), run the following shell 
 command (will also work in the windows command prompt):
 ```shell script
